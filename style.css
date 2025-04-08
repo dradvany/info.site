@@ -8,3 +8,7 @@ body {
 #text {
     white-space: pre-wrap;
 }
+a:hover {
+    font-style: italic;
+    letter-spacing: .035em;
+}
