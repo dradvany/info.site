@@ -28,9 +28,11 @@ body {
     word-wrap: break-word;
     max-width: 500px;
 }
-a:hover {
-    font-style: italic;
-    letter-spacing: .035em;
+@media (hover: hover) and (pointer: fine) {
+    a:hover {
+        font-style: italic;
+        letter-spacing: .035em;
+    }
 }
 .image-grid {
     display: grid;
