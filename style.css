@@ -19,6 +19,12 @@ body {
     line-height: 1.44em;
     max-width: 100%;
 }
+@media (max-width: 480px) {
+    body {
+        margin-left: 0.75rem;
+        margin-right: 0.75rem;
+    }
+}
 #text {
     white-space: pre-wrap;
     word-wrap: break-word;
