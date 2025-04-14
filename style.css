@@ -13,7 +13,7 @@
 body {
     margin-left: 1.45rem;
     margin-right: 1.45rem;
-    background: whitesmoke;
+    background: #F2F6EE;
     font-family: 'MapleMono', monospace;
     font-size: 0.92em;
     line-height: 1.44em;
@@ -59,7 +59,7 @@ body {
     font-size: 0.92em;
     text-align: center;
     padding: 0px 8px 0px 8px;
-    border: 2px outset white;
+     border: 2px outset white;
     border-radius: 3px;
 }
 .image-item iframe{
