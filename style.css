@@ -68,6 +68,11 @@ body {
      border: 2px outset white;
     border-radius: 3px;
 }
+@media (max-width: 480px) {
+    .image-caption {
+        margin-bottom: 2.85em;
+    }
+}
 .image-item iframe{
     border: none;
 }
