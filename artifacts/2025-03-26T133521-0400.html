@@ -80,7 +80,7 @@
     // Exact Wave Calculation Function
     function calculateWaveOffset(y, time, waveType) {
         const freq = 0.66;
-        const amp = 1.75;
+        const amp = 3.5;
         
         switch(waveType) {
             case "sin1":
@@ -166,10 +166,10 @@
 
         // Waveform type
         const waveform = "absModOffset";
-        const spacing = 30;
+        const spacing = 23;
 
         function animate() {
-            time += 0.022;
+            time += 0.02;
 
             rects.forEach((rect, index) => {
                 const y = parseFloat(rect.getAttribute('y')) || 0;
