@@ -1,15 +1,3 @@
-@font-face {
-    font-family: 'MapleMono';
-    src: url('MapleMono-Regular.ttf') format('truetype');
-    font-style: normal;
-    font-weight: normal;
-  }
-@font-face {
-    font-family: 'MapleMono';
-    src: url('MapleMono-Italic.ttf') format('truetype');
-    font-style: italic;
-    font-weight: normal;
-}
 body {
     margin-left: 1.45rem;
     margin-right: 1.45rem;
