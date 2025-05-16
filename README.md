@@ -1,6 +1,6 @@
-# danielradvany.com
+# danielradvany.info
 
-This repository contains the source files for [danielradvany.com](https://danielradvany.com).
+This repository contains the source files for [danielradvany.info](https://danielradvany.info).
 
 ## License
 
