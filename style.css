@@ -1,11 +1,26 @@
 body {
     margin-left: 1.45rem;
     margin-right: 1.45rem;
-    background: #F2F6EE;
-    font-family: sans-serif;
-    font-size: 0.92em;
+    background: ghostwhite;
+    font-family: serif;
+    font-size: 1.2em;
     line-height: 1.44em;
     max-width: 100%;
+    position: relative;    
+}
+mark{
+    padding-left: 0.126rem;
+    padding-right: 0.126rem;
+  }
+hr{
+    border: 0.618px solid grey;
+}
+a{
+    color: black;
+}
+img {
+    height: 100%;
+    white-space: nowrap;
 }
 @media (max-width: 480px) {
     body {
@@ -13,19 +28,24 @@ body {
         margin-right: 0.75rem;
     }
 }
+#title {
+    right: 0;
+    text-align: right;
+    position: absolute;
+}
 #text {
     white-space: pre-wrap;
     word-wrap: break-word;
-    max-width: 420px;
+    max-width: 550px;
 }
 #table {
-    white-space: pre-wrap;
-    word-wrap: break-word;
+    white-space: unset;
+    word-wrap: normal;
 }
 #info-text {
     white-space: pre-wrap;
     word-wrap: break-word;
-    max-width: 440px;
+    max-width: 550px;
 }
 #temp {
     white-space: pre-wrap;
