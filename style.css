@@ -1,12 +1,13 @@
 body {
-    margin-left: 1.45rem;
-    margin-right: 1.45rem;
+    margin: 1.45rem;
     background: ghostwhite;
-    font-family: serif;
+    font-family: Arial, sans-serif;
     font-size: 1.2em;
     line-height: 1.44em;
     max-width: 100%;
-    position: relative;    
+    position: relative; 
+  letter-spacing: .0723em;
+  font-weight: 400;
 }
 mark{
     padding-left: 0.126rem;
@@ -16,7 +17,8 @@ hr{
     border: 0.618px solid grey;
 }
 a{
-    color: black;
+    color: blue;
+text-decoration:none;
 }
 img {
     height: 100%;
@@ -37,6 +39,7 @@ img {
     white-space: pre-wrap;
     word-wrap: break-word;
     max-width: 550px;
+    
 }
 #table {
     white-space: unset;
@@ -55,7 +58,11 @@ img {
 }
 @media (hover: hover) and (pointer: fine) {
     a:hover {
-        font-style: italic;
-        letter-spacing: .035em;
+        color: ghostwhite;
+        text-shadow:
+        1px 0px 0 blue,  
+        -1px 0px 0 blue,  
+        0px -1px 0 blue,  
+        0px 1px 0 blue;  
     }
 }
