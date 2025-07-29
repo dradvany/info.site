@@ -6,19 +6,19 @@ body {
     line-height: 1.44em;
     max-width: 100%;
     position: relative; 
-  letter-spacing: .0723em;
-  font-weight: 400;
+    letter-spacing: .0723em;
+    font-weight: 400;
 }
 mark{
     padding-left: 0.126rem;
     padding-right: 0.126rem;
   }
 hr{
-    border: 0.618px solid grey;
+    border-style: solid;
 }
 a{
     color: blue;
-text-decoration:none;
+    text-decoration:none;
 }
 img {
     height: 100%;
@@ -39,7 +39,6 @@ img {
     white-space: pre-wrap;
     word-wrap: break-word;
     max-width: 550px;
-    
 }
 #table {
     white-space: unset;
