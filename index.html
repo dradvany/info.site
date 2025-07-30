@@ -5,18 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>index.html</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        a{
+            cursor: pointer;
+            text-decoration: underline;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
 </head>
 <body>
 <div id="text">Daniel is an <mark>information science</mark> student <small>(University of Maryland)</small> and design graduate <small>(Loyola University Chicago)</small> focusing on interface usability and <mark>digital curation.</mark> 
 
 <small>PREVIOUS WORKS (incomplete)</small> 
-<a href="https://github.com/dradvany/low-res-video-player" target="_blank">+ Low-Res Video Player for Desktop</a>
-<a href="temp.html">+ Image and Web Artifacts</a>
+<a href="https://github.com/dradvany/low-res-video-player" target="_blank">Low-Res Video Player for Desktop</a>
+<a href="temp.html">Image and Web Artifacts</a>
 
 <hr>Thank you. Your visit is appreciated.
-<a href="info.html">read more about this website</a>
+<a id="read-more-link">read more about this website</a><div id="info-content" class="hidden">
+All webpages and assets are hosted by GitHub. Past works were resized using ImageMagick to preserve aspect ratio and reduce file size. 
 
-</div>
+Last updated: July 2025
+Best viewed on non-mobile devices.
+This site is lightweight. Feedback is welcome.
+
+Email → dradvany at umd dot edu  
+Are.na → are.na/daniel-radvany</div></div> 
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const readMoreLink = document.getElementById('read-more-link');
+    const infoContent = document.getElementById('info-content');
+    
+    readMoreLink.addEventListener('click', function(e) {
+        e.preventDefault();
+        infoContent.classList.toggle('hidden');
+    });
+});
+</script>
 
 </body>
 </html>
