@@ -17,8 +17,7 @@ hr{
     border-style: solid;
 }
 a{
-    color: blue;
-    text-decoration:none;
+    color: black;
 }
 img {
     height: 100%;
@@ -57,11 +56,6 @@ img {
 }
 @media (hover: hover) and (pointer: fine) {
     a:hover {
-        color: ghostwhite;
-        text-shadow:
-        1px 0px 0 blue,  
-        -1px 0px 0 blue,  
-        0px -1px 0 blue,  
-        0px 1px 0 blue;  
+        color: blue;
     }
 }
