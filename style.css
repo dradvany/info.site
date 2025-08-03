@@ -12,8 +12,6 @@ body {
     min-height: 70vh;
 }
 mark{
-    padding-left: 0.2em;
-    padding-right: 0.2em;
     color: palevioletred;
     background: none;
 }
