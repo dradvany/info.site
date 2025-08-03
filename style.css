@@ -1,58 +1,74 @@
 body {
-    margin: 1.45rem;
-    background: ghostwhite;
-    font-family: Arial, sans-serif;
+    margin: 15vh 12vw;
+    background: white;
+    font-family: sans-serif;
     font-size: 1.2em;
-    line-height: 1.44em;
+    line-height: 1.32em;
     max-width: 100%;
     position: relative; 
     letter-spacing: .0723em;
     font-weight: 400;
+    color: black;
+    min-height: 70vh;
 }
 mark{
-    padding-left: 0.126rem;
-    padding-right: 0.126rem;
-  }
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+}
 hr{
     border-style: solid;
 }
 a{
     color: black;
 }
-img {
-    height: 100%;
-    white-space: nowrap;
-}
-@media (max-width: 480px) {
+
+@media (max-width: 768px) {
     body {
-        margin-left: 0.75rem;
-        margin-right: 0.75rem;
+        margin: 8vh 15vw 8vh 6vw;
+        font-size: 1.2em;
     }
 }
+
+@media (max-width: 480px) {
+    body {
+        margin: 5vh 20vw 5vh 4vw;
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 320px) {
+    body {
+        margin: 3vh 25vw 3vh 3vw;
+        font-size: 1.2em;
+    }
+}
+
 #title {
     right: 0;
     text-align: right;
     position: absolute;
 }
 #text {
+    background: white;
+    background-image: url(starry.gif);
+    background-size: 28px;
+    background-position-y: 56px;
+    background-position-x: 188px;
+    background-repeat: no-repeat;
+    padding-left: 0;
+    padding-bottom: 0.62em;
     white-space: pre-wrap;
     word-wrap: break-word;
     max-width: 550px;
 }
 #table {
+    border: 3px i gainsboro;
+    outline: 3px outset white;
+    background: white;
+    color: black;
+    padding: 1.122em;
     white-space: unset;
     word-wrap: normal;
-}
-#info-text {
-    white-space: pre-wrap;
-    word-wrap: break-word;
-    max-width: 550px;
-}
-#temp {
-    white-space: pre-wrap;
-    word-wrap: break-word;
-    max-width: 100%;
-    text-align: center;
 }
 @media (hover: hover) and (pointer: fine) {
     a:hover {
