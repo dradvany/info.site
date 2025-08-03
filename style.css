@@ -27,21 +27,21 @@ a{
 
 @media (max-width: 768px) {
     body {
-        margin: 8vh 15vw 8vh 6vw;
+        margin: 8vh 6vw;
         font-size: 1.2em;
     }
 }
 
 @media (max-width: 480px) {
     body {
-        margin: 5vh 20vw 5vh 4vw;
+        margin: 5vh 4vw;
         font-size: 1.2em;
     }
 }
 
 @media (max-width: 320px) {
     body {
-        margin: 3vh 25vw 3vh 3vw;
+        margin: 3vh 3vw;
         font-size: 1.2em;
     }
 }
