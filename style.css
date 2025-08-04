@@ -6,12 +6,14 @@ body {
     line-height: 1.32em;
     max-width: 100%;
     position: relative; 
-    letter-spacing: .0723em;
+    letter-spacing: .0323em;
     font-weight: 400;
     color: black;
     min-height: 70vh;
 }
 mark{
+    padding-left: 0.2em;
+    padding-right: 0.2em;
     color: palevioletred;
     background: none;
 }
@@ -51,16 +53,16 @@ a{
 }
 #text {
     background: white;
-    background-image: url(starry.gif);
+    background-image: url(/Users/danielradvany/Desktop/starry.gif);
     background-size: 28px;
     background-position-y: 56px;
-    background-position-x: 188px;
+    background-position-x: 175px;
     background-repeat: no-repeat;
     padding-left: 0;
     padding-bottom: 0.62em;
     white-space: pre-wrap;
     word-wrap: break-word;
-    max-width: 550px;
+    max-width: 500px;
 }
 #table {
     border: 3px i gainsboro;
