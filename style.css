@@ -23,6 +23,7 @@ hr{
 a{
     color: black;
     text-underline-offset: 0.074rem;
+    cursor: pointer;
 }
 
 @media (max-width: 768px) {
@@ -45,36 +46,30 @@ a{
         font-size: 1.2em;
     }
 }
-
 #title {
     right: 0;
     text-align: right;
     position: absolute;
 }
 #text {
-    background: white;
-    background-image: url(starry.gif);
-    background-size: 28px;
-    background-position-y: 56px;
-    background-position-x: 175px;
-    background-repeat: no-repeat;
     padding-left: 0;
     padding-bottom: 0.62em;
     white-space: pre-wrap;
     word-wrap: break-word;
     max-width: 500px;
+    position: relative;
 }
-#table {
-    border: 3px i gainsboro;
-    outline: 3px outset white;
-    background: white;
-    color: black;
-    padding: 1.122em;
-    white-space: unset;
-    word-wrap: normal;
+.gif {
+    height: 0.85em;
+    width: auto;
+    vertical-align: baseline;
 }
 @media (hover: hover) and (pointer: fine) {
     a:hover {
         color: blue;
     }
+}
+
+.hidden {
+    display: none;
 }
