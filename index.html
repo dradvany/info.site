@@ -45,7 +45,6 @@ Your visit is appreciated.</div></div>
         const infoContent = document.getElementById('info-content');
         let isClicked = false;
         
-        // Click handler
         readMoreLink.addEventListener('click', function(e) {
             e.preventDefault();
             isClicked = !isClicked;
@@ -56,14 +55,7 @@ Your visit is appreciated.</div></div>
                 infoContent.classList.add('hidden');
             }
         });
-        
-        // Hover handlers
-        readMoreLink.addEventListener('mouseenter', function() {
-            if (!isClicked) {
-                infoContent.classList.remove('hidden');
-            }
-        });
-        
+
         readMoreLink.addEventListener('mouseleave', function() {
             if (!isClicked) {
                 infoContent.classList.add('hidden');
