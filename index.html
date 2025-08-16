@@ -16,10 +16,9 @@
 </head>
 <body>
 <div id="text">
-
 danielradvany.info  <img src="starry.gif" class="gif">
 
-an <mark>information science</mark> student <small>(University of Maryland)</small> and design graduate <small>(Loyola University Chicago)</small> focusing on interface usability and <mark>digital curation</mark> 
+an information science student <small>(University of Maryland)</small> and design graduate <small>(Loyola University Chicago)</small> studying interface usability and human computer interaction
 
 <small>PREVIOUS WORKS (incomplete)</small> 
 <a href="https://github.com/dradvany/low-res-video-player" target="_blank">Low-Res Video Player for Desktop</a>
@@ -31,28 +30,47 @@ Last updated: August 2025
 This site is lightweight
 Best viewed on non-mobile devices
 
-hosted by GitHub 
+hosted on GitHub 
 hand-coded in HTML & CSS
 © 2025 Daniel Radvany
 
-dradvany at umd dot edu  
+dradvany (at) umd (dot) edu  
 are.na/daniel-radvany
 
-Thank you. Your visit is appreciated.</div></div> 
+Your visit is appreciated.</div></div> 
 
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-    const readMoreLink = document.getElementById('read-more-link');
-    const infoContent = document.getElementById('info-content');
-    
-    readMoreLink.addEventListener('click', function(e) {
-        e.preventDefault();
-        infoContent.classList.toggle('hidden');
+    document.addEventListener('DOMContentLoaded', function() {
+        const readMoreLink = document.getElementById('read-more-link');
+        const infoContent = document.getElementById('info-content');
+        let isClicked = false;
+        
+        // Click handler
+        readMoreLink.addEventListener('click', function(e) {
+            e.preventDefault();
+            isClicked = !isClicked;
+            
+            if (isClicked) {
+                infoContent.classList.remove('hidden');
+            } else {
+                infoContent.classList.add('hidden');
+            }
+        });
+        
+        // Hover handlers
+        readMoreLink.addEventListener('mouseenter', function() {
+            if (!isClicked) {
+                infoContent.classList.remove('hidden');
+            }
+        });
+        
+        readMoreLink.addEventListener('mouseleave', function() {
+            if (!isClicked) {
+                infoContent.classList.add('hidden');
+            }
+        });
     });
-});
-</script>
-
-</body>
-
-</body>
-</html>
+    </script>
+    
+    </body>
+    </html>
