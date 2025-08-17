@@ -65,7 +65,7 @@ a{
 }
 @media (hover: hover) and (pointer: fine) {
     a:hover {
-        color: white;
+        color: greenyellow;
         background-color: green;
         padding: .24em;
         border-radius: 2px;
