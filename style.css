@@ -1,25 +1,27 @@
 body {
     margin: 15vh 12vw;
-    background: white;
     font-family: sans-serif;
+    background-color: white;
     font-size: 1.2em;
     line-height: 1.32em;
     max-width: 100%;
     position: relative; 
     letter-spacing: .0323em;
     font-weight: 400;
-    color: black;
     min-height: 70vh;
     overflow-y: scroll;
+    color: green;
+}
+hr{
+    border-style: solid;
 }
 .strikethrough {
     text-decoration: line-through;
     text-decoration-thickness: 0.1em;
 }
 a{
-    color: black;
+    color: green;
     text-underline-offset: 0.18rem;
-    text-decoration-thickness: 0.1em;
     cursor: pointer;
     line-height: 1.62em;
 }
@@ -50,8 +52,6 @@ a{
     position: absolute;
 }
 #text {
-    padding-left: 0;
-    padding-bottom: 0.62em;
     white-space: pre-wrap;
     word-wrap: break-word;
     max-width: 500px;
@@ -65,12 +65,11 @@ a{
 @media (hover: hover) and (pointer: fine) {
     a:hover {
         color: white;
-        background-color: blue;
+        background-color: green;
         padding: .24em;
         border-radius: 2px;
     }
 }
-
 .hidden {
     display: none;
 }
