@@ -18,6 +18,7 @@ hr{
 .strikethrough {
     text-decoration: line-through;
     text-decoration-thickness: 0.1em;
+    line-height: 1.62em;
 }
 a{
     color: green;
