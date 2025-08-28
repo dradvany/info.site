@@ -15,53 +15,34 @@
     </style>
 </head>
 <body>
-<div id="text">danielradvany.info
-
-an information science student <small>(University of Maryland)</small> and design graduate <small>(Loyola University Chicago)</small> studying digital accessibility and human&ndash;computer interaction
-
-<small>PREVIOUS WORKS (incomplete)</small> 
-<a href="https://github.com/dradvany/low-res-video-player" target="_blank">Low-Res Video Player for Desktop</a>
-<span class="strikethrough">Image and Web Artifacts</span>
-
-
-<a id="read-more-link">about this website</a><div id="info-content" class="hidden">
-Last updated: August 2025
-This site is lightweight
-Best viewed on non-mobile devices
-
-hosted on GitHub 
-hand-coded in HTML & CSS
-© 2025 Daniel Radvany
-
-dradvany (at) umd (dot) edu  
-are.na/daniel-radvany
-
-Your visit is appreciated.</div></div> 
-
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const readMoreLink = document.getElementById('read-more-link');
-        const infoContent = document.getElementById('info-content');
-        let isClicked = false;
-        
-        readMoreLink.addEventListener('click', function(e) {
-            e.preventDefault();
-            isClicked = !isClicked;
+    <body>
+        <main>
+            <h1>danielradvany.info</h1>
             
-            if (isClicked) {
-                infoContent.classList.remove('hidden');
-            } else {
-                infoContent.classList.add('hidden');
-            }
-        });
-
-        readMoreLink.addEventListener('mouseleave', function() {
-            if (!isClicked) {
-                infoContent.classList.add('hidden');
-            }
-        });
-    });
-    </script>
+            <p class="intro">an information science student <small>(University of Maryland)</small> and design graduate <small>(Loyola University Chicago)</small> studying human&ndash;computer interaction.</p>
     
-    </body>
+<section aria-label="Selected projects">
+    <h2><small>selected projects</small></h2>
+    <ul>
+        <li><a href="https://github.com/dradvany/low-res-video-player" target="_blank">Low-Res Video Player for Desktop</a></li>
+        <li><span class="strikethrough">Image and Web Artifacts</span></li>
+    </ul>
+</section>
+
+<section aria-label="About this site" class="site-info">
+    <h2><small>about this site</small></h2>
+    <!-- <p>last updated: august 2025</p> -->
+    <!-- <p>this site is lightweight</p> -->
+    <!-- <p>best viewed on non-mobile devices</p> -->
+    <p>hosted on GitHub Pages</p>
+    <p>hand&ndash;coded in HTML & CSS</p>
+    <p>© 2025 Daniel Radvany</p>
+    <br>
+    <p>dradvany <small>[at]</small> umd <small>[dot]</small> edu</p>
+    <p>are.na/daniel-radvany</p>
+</section>
+
+<p><small><a onclick="alert('Your visit is appreciated, thank you. \n Recent work will be updated soon.')">[a note from the author]</a></small></p>
+</main>
+</body>
     </html>
