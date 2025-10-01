@@ -1,7 +1,7 @@
 body {
     margin: 3vh 2vw;
     font-family: sans-serif;
-    background-color: white;
+    background-color: gainsboro;
     font-size: 1.42em;
     line-height: 1.32em;
     max-width: 100%;
@@ -16,10 +16,12 @@ main {
     padding: .5em;
     max-width: 600px;
     position: relative;
+    display: block;
+    margin-right: auto;
 }
 
 h1 {
-    margin: 0 0 1.32em 0;
+    margin: 0 0 1.12em 0;
     font-size: 1em;
     font-weight: 400;
 }
@@ -48,7 +50,7 @@ ul {
 
 li {
     margin-bottom: 0;
-    line-height: 1.62em;
+    line-height: 1.67em;
 }
 
 a {
@@ -58,9 +60,8 @@ a {
     line-height: 1.62em;
 }
 
-.strikethrough {
-    text-decoration: line-through;
-    line-height: 1.62em;
+small{
+    line-height: 1.14em;
 }
 
 .site-info {
@@ -79,26 +80,17 @@ a {
     margin-top: 0;
 }
 
+.strikethrough {
+    text-decoration: line-through;
+    line-height: 1.62em;
+}
+
 @media (max-width: 768px) {
     body {
-        margin: 8vh 6vw;
-        font-size: 1.2em;
+        margin: 3vh 2vw;
     }
 }
 
-@media (max-width: 480px) {
-    body {
-        margin: 5vh 4vw;
-        font-size: 1.2em;
-    }
-}
-
-@media (max-width: 320px) {
-    body {
-        margin: 3vh 3vw;
-        font-size: 1.2em;
-    }
-}
 
 @media (hover: hover) and (pointer: fine) {
     a:hover {
