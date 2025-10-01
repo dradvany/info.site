@@ -1,0 +1,82 @@
+body {
+    font-size: 1em;
+    line-height: 1.47em;
+    background-color: gainsboro;
+    color: #424242;
+
+}
+
+.return-nav a {
+    line-height: 0;
+}
+
+button {
+    font-size: 1em;
+    background-color: white;
+    border: 1px solid darkgrey;
+    cursor: pointer;
+    font-family: inherit;
+    padding: 0.1em 0.4em;
+    font-weight: 400;
+    font-family: sans-serif;
+    border-radius: 3px;
+}
+
+.return-nav {
+    margin-bottom: 1.14em;
+}
+
+.project-header h1 {
+    margin: 0;
+}
+
+.project-year {
+    margin: 0 0 1.32em 0;
+}
+
+.hidden-link {
+    text-decoration: none;
+}
+
+.hidden-link:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+.project-gallery {
+    display: flex;
+    gap: 0.4em;
+    flex-wrap: wrap;
+}
+
+img {
+    height: 60px;
+    width: auto;
+    padding: 0.12em;
+    cursor: pointer;
+}
+
+a {
+    color: #424242;
+}
+
+em{
+    font-family: monospace;
+    letter-spacing: .02em;
+}
+
+@media (max-width: 480px) {
+    .project-gallery {
+        flex-direction: column;
+    }
+    
+    img {
+        height: 60px;
+    }  
+}
+
+@media (hover: hover) and (pointer: fine) {
+    button:hover {
+        background-image: linear-gradient(to bottom, lightgray, white);
+    }
+}
