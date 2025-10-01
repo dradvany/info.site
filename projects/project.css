@@ -67,11 +67,14 @@ em{
 
 @media (max-width: 480px) {
     .project-gallery {
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: flex-start;
     }
     
     img {
-        height: 60px;
+        height: auto;
+        width: calc(33.333% - 0.27em);
+        max-width: 120px;
     }  
 }
 
