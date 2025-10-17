@@ -1,9 +1,7 @@
 body {
     font-size: 1em;
     line-height: 1.47em;
-    background-color: gainsboro;
     color: #424242;
-
 }
 
 .return-nav a {
@@ -11,15 +9,23 @@ body {
 }
 
 button {
-    font-size: 1em;
-    background-color: white;
-    border: 1px solid darkgrey;
+    font-size: 1.42em;
+    background-color: transparent;
+    border: none;
     cursor: pointer;
     font-family: inherit;
-    padding: 0.1em 0.4em;
+    padding: 0;
     font-weight: 400;
     font-family: sans-serif;
-    border-radius: 3px;
+    color: green;
+    text-decoration: underline;
+    text-underline-offset: 0.18rem;
+    line-height: 1.32em;
+    letter-spacing: .0323em;
+}
+
+button::before {
+    content: "↽ ";
 }
 
 .return-nav {
@@ -80,6 +86,6 @@ em{
 
 @media (hover: hover) and (pointer: fine) {
     button:hover {
-        background-image: linear-gradient(to bottom, lightgray, white);
+        color: blue;
     }
 }
