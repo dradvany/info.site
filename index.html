@@ -7,42 +7,110 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main>
-        <h1>danielradvany.info</h1>
-        
-        <section aria-label="Previous sites">
-            <h2><small>&hellip; previous sites (trials, incomplete)</small></h2>
-            <ul>
-                <li><a href="https://github.com/dradvany/low-res-video-player" target="_blank">low-res-video-player.html</a> <small>[2025]</small> <small>(GitHub)</small></li>
-                <li><a href="sites/the-desktop-is-a-storage-unit.html" target="_blank">the-desktop-is-a-storage-unit.html</a> <small>[2025]</small></li>
-                <li><span class="strikethrough">kinetic-type-tool-v1.html</span> <small>[2024]</small></li>
-                <li><a href="sites/in-memory/in-memory-of-an-iPod.html" target="_blank">in-memory-of-an-iPod.html</a> <small>[2022]</small></li>
-            </ul>
-        </section>
+    <div class="history-container">
+        <div class="left-content">
+            <h1>danielradvany.info</h1>
+            
+            <section>
+                <h2><small>&hellip; previous sites (trials, incomplete)</small> ⎘</h2>
+                <ul>
+                    <li><a href="https://github.com/dradvany/low-res-video-player" target="_blank">low-res-video-player.html</a> <small>[2025]</small> <small>(GitHub)</small></li>
+                    <li><a href="sites/a-desktop-garage-door.html" target="_blank">the-desktop-is-a-storage-unit.html</a> <small>[2025]</small></li>
+                    <li><span class="strikethrough">kinetic-type-tool-v1.html</span> <small>[2024]</small></li>
+                    <li><a href="sites/in-memory/in-memory-of-an-iPod.html" target="_blank">in-memory-of-an-iPod.html</a> <small>[2022]</small></li>
+                </ul>
+            </section>
 
-        <section aria-label="Selected projects">
-            <h2><small>&hellip; selected projects</small></h2>
-            <ul>
-                <li><a href="projects/decay-type.html">Digital Decay Type Rendering</a> <small>[2024]</small></li>
-                <li><a href="projects/archive-installation.html">Generative Archiving with Zintis</a> <small>[2023]</small></li>
-            </ul>
-        </section>
-        <section aria-label="About this site" class="site-info">
-            <p>hosted on GitHub Pages</p>
-            <p>hand&ndash;coded in HTML & CSS</p>
-            <p>&copy; 2025 Daniel Radvany</p>
-            <p>forever under construction</p>
-            <br>
-            <!-- <p>last updated: october 2025</p> -->
-           <!--  <p>this site is lightweight</p>-->
-            <!-- <p>best viewed on non-mobile devices</p>-->
-            <!-- <br> -->
-            <p>dradvany <small>[at]</small> umd <small>[dot]</small> edu</p>
-            <p>are.na/daniel-radvany</p>
-            <br>
-            <p>full cv available upon request</p>
-            <br>
-        </section>
-    </main>
+            <section>
+                <h2><small>&hellip; selected projects</small></h2>
+                <ul>
+                    <li><button class="fact-button" onclick="openProject('decay-type')">Digital Decay Type Rendering</button> <small>[2024]</small></li>
+                    <li><button class="fact-button" onclick="openProject('archive-installation')">Generative Archiving Installation</button> <small>[2023]</small></li>
+                </ul>
+            </section>
+            
+            <section class="site-info">
+                <p>hosted on GitHub Pages</p>
+                <p>hand&ndash;coded in HTML & CSS</p>
+                <p>&copy; 2025 Daniel Radvany</p>
+                <p>forever under construction</p>
+                <br>
+                <p>dradvany <small>[at]</small> umd <small>[dot]</small> edu</p>
+                <p>are.na/daniel-radvany</p>
+                <br>
+                <p>full cv available upon request</p>
+                <br>
+            </section>
+        </div>
+    </div>
+
+    <div class="project" id="projectContainer">
+        <button class="hide-btn" onclick="closeProject()"><small>hide documentation</small></button>
+        
+        <div id="decay-type" class="project-content">
+            <div class="margin-bottom">
+                <header class="project-header">
+                    <h1>title: Digital Decay Type Rendering</h1>
+                    <h1>year: 2024</h1><br>
+                </header>
+                
+                <section class="project-description">
+                    <p><i>How do we conceptualize digital materiality?</i></p>
+                    <p>Python scripts documenting digital preservation through decomposition. A representation of data loss emerges by removing vector data from letterforms. Framing digital objects as computational amalgomations works to question the status of artifacts and their renderings. As data points disappear, the output communicates a shift based on legibility and perception.</p>
+                    <section class="project-gallery">
+                        <div class="gallery-container">
+                            <div class="image-wrapper">
+                                <img src="images/2024-07-25T012210-0400.png" alt="documentation of program output" class="gallery-image active" data-caption="documentation of intitial program output">
+                            </div>
+                            <p class="image-caption">documentation of intitial program output</p>
+                        </div>
+                    </section>
+                    <p>Intentional decay becomes an act of represenation, documenting the process of loss rather than the stable object. The resulting forms become records of their own loss. This project emerged from Drawbot expirements during Cooper Union's 2024 Summer Sessions Workshop and was revisited for print documentation following a course on digital curation (in-progress).</p>
+                </section>
+            </div>
+        </div>
+        
+        <div id="archive-installation" class="project-content">
+            <div class="margin-bottom">
+                <header class="project-header">
+                    <h1>title: Generative Archiving Installation</h1>
+                    <h1>year: 2023</h1><br>
+                </header>
+                
+                <section class="project-description">
+                    <p>An installation on the reproduction of cultural materials.</p>
+                    <p>Photographs, paintings, and poetry courtesy of<em>&ThinSpace;Zintis: The Quarterly American&ndash;Latvian Magazine for Art, Literature, and Science (1960–1965)&ThinSpace;</em>were digitized and preloaded as data in a Processing sketch. Interaction with a bespoke controller enabled editing over predetermined parameters. Input channels corresponded to specific variables within the creative environment determining grid size, text layout, and layering of images.</p>
+
+                    <section class="project-gallery">
+                        <div class="gallery-container side-by-side">
+                            <div class="image-wrapper side-by-side-wrapper">
+                                <div class="image-with-caption">
+                                    <img src="images/2023-04-19T151415-0500.jpg" alt="documentation of sculpture development with Enes Eldes" class="active">
+                                    <p class="image-caption">sculpture development with Enes Eldes</p>
+                                </div>
+                                <div class="image-with-caption">
+                                    <img src="images/2023-05-03T134020-0400.gif" alt="demonstration of the bespoke input controller with Betsy Odom" class="active">
+                                    <p class="image-caption">demonstration of input controller with Betsy Odom</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <p>Users collaborate in the reproduction of cultural artifacts through direct, physical engagement with archived content by subverting conventional design tools. Compositions were automatically saved and later printed. This capstone project was completed under guidance from <a href="https://djoshcook.com" class="hidden-link" target="_blank">D. Josh Cook</a> at Loyola University Chicago.</p>
+
+                    <section class="project-gallery">
+                        <div class="gallery-container">
+                            <div class="image-wrapper">
+                                <img src="images/2023-05-14T164547-0400.jpg" alt="installation output showing collaged imagery and poem overlay" class="active" data-caption="installation output of collaged imagery and poems">
+                            </div>
+                            <p class="image-caption">installation output of collaged paintings and poetry</p>
+                        </div>
+                    </section>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
