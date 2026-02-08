@@ -1,12 +1,12 @@
 html, body {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
-  color: slateblue;
+  color: #6a5acd;
   line-height: 1.22;
   letter-spacing: 0.035em;
 }
@@ -22,32 +22,31 @@ h2 {
 }
 
 a:link {
-  color: slateblue;
+  color: #6a5acd;
 }
 
 a:visited {
-  color: slateblue;
+  color: #6a5acd;
   text-decoration: none;
 }
 
 a:active {
-  color: slateblue;
+  color: #6a5acd;
   text-decoration: none;
 }
 
 a:hover {
-  color: blue;
+  color: #0000ff;
   text-decoration: underline;
 }
 
 a.current {
-  color: slateblue;
+  color: #6a5acd;
   text-decoration: underline;
 }
 
 ul, li {
   list-style: none;
-  list-style-type: none;
   padding: 0;
   margin: 0;
 }
@@ -59,7 +58,7 @@ ul, li {
 
 .sidebar {
   position: fixed;
-  left: 10px;
+  left: 20px;
   width: 250px;
 }
 
@@ -76,15 +75,14 @@ ul, li {
 
 .date {
   position: fixed;
-  right: 10px;
+  right: 20px;
 }
 
 .content {
   position: absolute;
   top: 40px;
-  left: 320px;
+  left: 330px;
   width: 600px;
-  height: auto;
   padding-bottom: 100px;
   display: none;
 }
@@ -124,19 +122,15 @@ ul, li {
   position: fixed;
   z-index: 999;
   top: 0;
-  left: 320px;
+  left: 330px;
   width: 600px;
-  background-color: white;
-}
-
-.list {
-  
+  background-color: #ffffff;
 }
 
 .multi {
   position: fixed;
   top: 10px;
-  left: 10px;
+  left: 20px;
   width: 250px;
 }
 
@@ -147,8 +141,8 @@ ul, li {
 
 .menu {
   position: fixed;
-  left: 10px;
-  top: 0px;
+  left: 20px;
+  top: 0;
   width: 250px;
 }
 
@@ -182,9 +176,8 @@ ul, li {
 .about-content {
   position: absolute;
   top: 34px;
-  left: 320px;
+  left: 330px;
   width: 600px;
-  height: auto;
   padding-bottom: 100px;
   display: none;
 }
@@ -206,7 +199,7 @@ ul, li {
   position: static;
   z-index: 999;
   width: 600px;
-  background-color: white;
+  background-color: #ffffff;
   padding-bottom: 5px;
 }
 
@@ -224,7 +217,6 @@ ul, li {
   padding-top: 20px;
 }
 
-/* previous sites list */
 .sites-list {
   padding: 0;
   margin: 0;
@@ -234,7 +226,6 @@ ul, li {
   margin-bottom: 5px;
 }
 
-/* strikethrough */
 .strikethrough {
   text-decoration: line-through;
 }
@@ -251,31 +242,37 @@ em {
   .sidebar {
     position: relative;
     width: 250px;
-    left: 10px;
+    left: 20px;
   }
   
   .multi {
     position: relative;
     width: 250px;
+    margin-left: 20px;
   }
   
   .menu {
     position: relative;
     width: 250px;
+    left: 20px;
     bottom: auto;
   }
   
   .content {
     position: relative;
-    left: 10px;
-    width: calc(100% - 20px);
+    left: 20px;
+    width: calc(100% - 40px);
     top: 20px;
+  }
+  
+  .content img {
+    width: 100%;
   }
   
   .about-content {
     position: relative;
-    left: 10px;
-    width: calc(100% - 20px);
+    left: 20px;
+    width: calc(100% - 40px);
     top: 20px;
   }
   
