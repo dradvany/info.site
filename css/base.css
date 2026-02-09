@@ -92,7 +92,7 @@ ul, li {
 }
 
 .content p {
-  text-indent: 2em;
+  text-indent: 1.4em;
 }
 
 .content p:not(:empty) {
