@@ -58,7 +58,7 @@ ul, li {
 
 .sidebar {
   position: fixed;
-  left: 20px;
+  left: 15px;
   width: 250px;
 }
 
@@ -130,7 +130,7 @@ ul, li {
 .multi {
   position: fixed;
   top: 10px;
-  left: 20px;
+  left: 15px;
   width: 250px;
 }
 
@@ -141,7 +141,7 @@ ul, li {
 
 .menu {
   position: fixed;
-  left: 20px;
+  left: 15px;
   top: 0;
   width: 250px;
 }
@@ -242,7 +242,7 @@ em {
   .sidebar {
     position: relative;
     width: 250px;
-    left: 20px;
+    left: 15px;
   }
   
   .multi {
@@ -254,13 +254,13 @@ em {
   .menu {
     position: relative;
     width: 250px;
-    left: 20px;
+    left: 15px;
     bottom: auto;
   }
   
   .content {
     position: relative;
-    left: 20px;
+    left: 15px;
     width: calc(100% - 40px);
     top: 20px;
   }
@@ -271,7 +271,7 @@ em {
   
   .about-content {
     position: relative;
-    left: 20px;
+    left: 15px;
     width: calc(100% - 40px);
     top: 20px;
   }
