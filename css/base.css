@@ -7,7 +7,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
   color: #6a5acd;
-  line-height: 1.22;
+  line-height: 19.3px;
   letter-spacing: 0.035em;
 }
 
@@ -92,7 +92,9 @@ ul, li {
 }
 
 .content p {
-  text-indent: 1.4em;
+  text-wrap: balance;
+  line-height: 21.0px;
+  text-indent: 1.618em;
 }
 
 .content p:not(:empty) {
@@ -280,5 +282,9 @@ em {
     position: relative;
     left: 0;
     width: 100%;
+  }
+
+  .content p {
+    text-wrap: wrap;
   }
 }
